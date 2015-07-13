@@ -10,7 +10,7 @@ community_category = Category.where(name: 'community').first_or_create(name: 'co
 housing_category = Category.where(name: 'housing').first_or_create(name: 'housing')
 services_category = Category.where(name: 'services').first_or_create(name: 'services')
 for_sale_category = Category.where(name: 'for_sale').first_or_create(name: 'for_sale')
-personal_category = Category.where(name: 'personal').first_or_create(name: 'personal')
+personals_category = Category.where(name: 'personals').first_or_create(name: 'personals')
 jobs_category = Category.where(name: 'jobs').first_or_create(name: 'jobs')
 
 
@@ -24,9 +24,9 @@ Subcategory.where(name: 'missing', category_id: community_category.id).first_or_
 
 Subcategory.where(name: 'apts / housing', category_id: housing_category.id).first_or_create(name: 'apts / housing', category_id: housing_category.id)
 Subcategory.where(name: 'vacation rentals', category_id: housing_category.id).first_or_create(name: 'vacation rentals', category_id: housing_category.id)
-Subcategory.where(name: 'rooms / shared', category_id: community_category.id).first_or_create(name: 'rooms / shared', category_id: community_category.id)
+Subcategory.where(name: 'rooms / shared', category_id: housing_category.id).first_or_create(name: 'rooms / shared', category_id: housing_category.id)
 
-Subcategory.where(name: 'creativepet', category_id: services_category.id).first_or_create(name: 'creativepet', category_id: services_category.id)
+Subcategory.where(name: 'creative', category_id: services_category.id).first_or_create(name: 'creative', category_id: services_category.id)
 Subcategory.where(name: 'pet', category_id: services_category.id).first_or_create(name: 'pet', category_id: services_category.id)
 Subcategory.where(name: 'event', category_id: services_category.id).first_or_create(name: 'event', category_id: services_category.id)
 Subcategory.where(name: 'therapeutic', category_id: services_category.id).first_or_create(name: 'therapeutic', category_id: services_category.id)
@@ -40,13 +40,13 @@ Subcategory.where(name: 'jewelry', category_id: for_sale_category.id).first_or_c
 Subcategory.where(name: 'general', category_id: for_sale_category.id).first_or_create(name: 'general', category_id: for_sale_category.id)
 Subcategory.where(name: 'books', category_id: for_sale_category.id).first_or_create(name: 'books', category_id: for_sale_category.id)
 
-Subcategory.where(name: 'casual encounters', category_id: personal_category.id).first_or_create(name: 'casual encounters', category_id: personal_category.id)
-Subcategory.where(name: 'women seeking men', category_id: personal_category.id).first_or_create(name: 'women seeking men', category_id: personal_category.id)
-Subcategory.where(name: 'men seeking women', category_id: personal_category.id).first_or_create(name: 'men seeking women', category_id: personal_category.id)
-Subcategory.where(name: 'women seeking women', category_id: personal_category.id).first_or_create(name: 'women seeking women', category_id: personal_category.id)
-Subcategory.where(name: 'men seeking men', category_id: personal_category.id).first_or_create(name: 'men seeking men', category_id: personal_category.id)
-Subcategory.where(name: 'rants', category_id: personal_category.id).first_or_create(name: 'rants', category_id: personal_category.id)
+Subcategory.where(name: 'casual encounters', category_id: personals_category.id).first_or_create(name: 'casual encounters', category_id: personals_category.id)
+Subcategory.where(name: 'women seeking men', category_id: personals_category.id).first_or_create(name: 'women seeking men', category_id: personals_category.id)
+Subcategory.where(name: 'men seeking women', category_id: personals_category.id).first_or_create(name: 'men seeking women', category_id: personals_category.id)
+Subcategory.where(name: 'women seeking women', category_id: personals_category.id).first_or_create(name: 'women seeking women', category_id: personals_category.id)
+Subcategory.where(name: 'men seeking men', category_id: personals_category.id).first_or_create(name: 'men seeking men', category_id: personals_category.id)
+Subcategory.where(name: 'rants', category_id: personals_category.id).first_or_create(name: 'rants', category_id: personals_category.id)
 
 Subcategory.where(name: 'customer service', category_id: jobs_category.id).first_or_create(name: 'customer service', category_id: jobs_category.id)
-Subcategory.where(name: 'general labor', category_id: personal_category.id).first_or_create(name: 'general labor', category_id: personal_category.id)
-Subcategory.where(name: 'medical', category_id: personal_category.id).first_or_create(name: 'medical', category_id: personal_category.id)
+Subcategory.where(name: 'general labor', category_id: jobs_category.id).first_or_create(name: 'general labor', category_id: jobs_category.id)
+Subcategory.where(name: 'medical', category_id: jobs_category.id).first_or_create(name: 'medical', category_id: jobs_category.id)
