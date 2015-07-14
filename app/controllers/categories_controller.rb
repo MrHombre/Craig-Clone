@@ -10,4 +10,7 @@ class CategoriesController < ApplicationController
     @jobs = @categories[5]
   end
 
+  def show
+  end
+
 end

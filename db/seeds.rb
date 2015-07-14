@@ -23,22 +23,23 @@ Subcategory.where(name: 'missing', category_id: community_category.id).first_or_
 
 
 Subcategory.where(name: 'apts / housing', category_id: housing_category.id).first_or_create(name: 'apts / housing', category_id: housing_category.id)
-Subcategory.where(name: 'vacation rentals', category_id: housing_category.id).first_or_create(name: 'vacation rentals', category_id: housing_category.id)
 Subcategory.where(name: 'rooms / shared', category_id: housing_category.id).first_or_create(name: 'rooms / shared', category_id: housing_category.id)
+Subcategory.where(name: 'vacation rentals', category_id: housing_category.id).first_or_create(name: 'vacation rentals', category_id: housing_category.id)
+
 
 Subcategory.where(name: 'creative', category_id: services_category.id).first_or_create(name: 'creative', category_id: services_category.id)
-Subcategory.where(name: 'pet', category_id: services_category.id).first_or_create(name: 'pet', category_id: services_category.id)
 Subcategory.where(name: 'event', category_id: services_category.id).first_or_create(name: 'event', category_id: services_category.id)
-Subcategory.where(name: 'therapeutic', category_id: services_category.id).first_or_create(name: 'therapeutic', category_id: services_category.id)
 Subcategory.where(name: 'labor', category_id: services_category.id).first_or_create(name: 'labor', category_id: services_category.id)
+Subcategory.where(name: 'pet', category_id: services_category.id).first_or_create(name: 'pet', category_id: services_category.id)
+Subcategory.where(name: 'therapeutic', category_id: services_category.id).first_or_create(name: 'therapeutic', category_id: services_category.id)
 
-Subcategory.where(name: 'free', category_id: for_sale_category.id).first_or_create(name: 'free', category_id: for_sale_category.id)
+Subcategory.where(name: 'books', category_id: for_sale_category.id).first_or_create(name: 'books', category_id: for_sale_category.id)
 Subcategory.where(name: 'clothing/acc', category_id: for_sale_category.id).first_or_create(name: 'clothing/acc', category_id: for_sale_category.id)
+Subcategory.where(name: 'free', category_id: for_sale_category.id).first_or_create(name: 'free', category_id: for_sale_category.id)
 Subcategory.where(name: 'furniture', category_id: for_sale_category.id).first_or_create(name: 'furniture', category_id: for_sale_category.id)
+Subcategory.where(name: 'general', category_id: for_sale_category.id).first_or_create(name: 'general', category_id: for_sale_category.id)
 Subcategory.where(name: 'household', category_id: for_sale_category.id).first_or_create(name: 'household', category_id: for_sale_category.id)
 Subcategory.where(name: 'jewelry', category_id: for_sale_category.id).first_or_create(name: 'jewelry', category_id: for_sale_category.id)
-Subcategory.where(name: 'general', category_id: for_sale_category.id).first_or_create(name: 'general', category_id: for_sale_category.id)
-Subcategory.where(name: 'books', category_id: for_sale_category.id).first_or_create(name: 'books', category_id: for_sale_category.id)
 
 Subcategory.where(name: 'casual encounters', category_id: personals_category.id).first_or_create(name: 'casual encounters', category_id: personals_category.id)
 Subcategory.where(name: 'women seeking men', category_id: personals_category.id).first_or_create(name: 'women seeking men', category_id: personals_category.id)
