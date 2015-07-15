@@ -11,7 +11,11 @@
     posted <%= time_ago_in_words(@listing.created_at) %>
     <h1 class="listing-header"><%= @listing.title %></h1>
     <div class="box">
-      <p>test</p>
+      <% if @listing.user = current_user %>
+        <p>test</p>
+        <%= link_to 'edit', edit_listing_path %>
+        <%= link_to 'delete', @listing, data: {confirm: "Are you sure you want to delete this listing?" }, method: :delete %>
+      <% end %>
     </div>
     <p><%= @listing.description %></p>
   </div>
