@@ -9,7 +9,7 @@
 community_category = Category.where(name: 'community').first_or_create(name: 'community')
 housing_category = Category.where(name: 'housing').first_or_create(name: 'housing')
 services_category = Category.where(name: 'services').first_or_create(name: 'services')
-for_sale_category = Category.where(name: 'for_sale').first_or_create(name: 'for_sale')
+for_sale_category = Category.where(name: 'for sale').first_or_create(name: 'for sale')
 personals_category = Category.where(name: 'personals').first_or_create(name: 'personals')
 jobs_category = Category.where(name: 'jobs').first_or_create(name: 'jobs')
 

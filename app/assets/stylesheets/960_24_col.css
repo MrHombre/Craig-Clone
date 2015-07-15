@@ -13,14 +13,14 @@
   Note: IE6 works fine without this fix.
 */
 
-body {
+/*body {
   min-width: 960px;
 }
 
 /* `Container
 ----------------------------------------------------------------------------------------------------*/
 
-.container_24 {
+/*.container_24 {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
@@ -29,7 +29,7 @@ body {
 /* `Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
 
-.grid_1,
+/*.grid_1,
 .grid_2,
 .grid_3,
 .grid_4,
@@ -88,7 +88,7 @@ body {
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 
-.alpha {
+/*.alpha {
   margin-left: 0;
 }
 
@@ -99,7 +99,7 @@ body {
 /* `Grid >> 24 Columns
 ----------------------------------------------------------------------------------------------------*/
 
-.container_24 .grid_1 {
+/*.container_24 .grid_1 {
   width: 30px;
 }
 
@@ -198,7 +198,7 @@ body {
 /* `Prefix Extra Space >> 24 Columns
 ----------------------------------------------------------------------------------------------------*/
 
-.container_24 .prefix_1 {
+/*.container_24 .prefix_1 {
   padding-left: 40px;
 }
 
@@ -293,7 +293,7 @@ body {
 /* `Suffix Extra Space >> 24 Columns
 ----------------------------------------------------------------------------------------------------*/
 
-.container_24 .suffix_1 {
+/*.container_24 .suffix_1 {
   padding-right: 40px;
 }
 
@@ -388,7 +388,7 @@ body {
 /* `Push Space >> 24 Columns
 ----------------------------------------------------------------------------------------------------*/
 
-.container_24 .push_1 {
+/*.container_24 .push_1 {
   left: 40px;
 }
 
@@ -483,7 +483,7 @@ body {
 /* `Pull Space >> 24 Columns
 ----------------------------------------------------------------------------------------------------*/
 
-.container_24 .pull_1 {
+/*.container_24 .pull_1 {
   left: -40px;
 }
 
@@ -580,7 +580,7 @@ body {
 
 /* http://sonspring.com/journal/clearing-floats */
 
-.clear {
+/*.clear {
   clear: both;
   display: block;
   overflow: hidden;
@@ -591,7 +591,7 @@ body {
 
 /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
 
-.clearfix:before,
+/*.clearfix:before,
 .clearfix:after,
 .container_24:before,
 .container_24:after {
@@ -615,7 +615,7 @@ body {
   Move to separate stylesheet if invalid CSS is a problem.
 */
 
-.clearfix,
+/*.clearfix,
 .container_24 {
   zoom: 1;
 }
