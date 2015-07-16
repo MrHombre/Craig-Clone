@@ -11,5 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.bar.custom
+//= require helpers
 //= require jquery_ujs
 //= require turbolinks
